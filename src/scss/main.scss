@@ -1,0 +1,16 @@
+@use 'sass:math';
+@import "variable";
+@import "mixin";
+
+
+.body{
+  margin:0;
+  padding: 0;
+  background: $light;
+  font-family: 'Source Code Pro', monospace;
+  color:$gray-dark;
+  &--disable{
+    background: $black;
+    color: $white;
+  }
+}
