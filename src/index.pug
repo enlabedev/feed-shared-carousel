@@ -2,24 +2,39 @@ extends pug/template/default.pug
 block title 
   title ENLABE | Enrique Lazo Bello - Full Stack &amp; Creative Developer
 block body
-  // Slider main container
-  .swiper
-    // Additional required wrapper
-    .swiper-wrapper
-      // Slides
-      .swiper-slide 
-        figure
-          img(src="https://picsum.photos/400/400")
-      .swiper-slide 
-        figure
-          img(src="https://picsum.photos/400/400")
-      .swiper-slide 
-        figure
-          img(src="https://picsum.photos/400/400")
-    // If we need pagination
-    .swiper-pagination
-    // If we need navigation buttons
-    .swiper-button-prev
-    .swiper-button-next
-    // If we need scrollbar
-    .swiper-scrollbar
+  section.feed
+    .swiper
+      .swiper-wrapper
+        article.swiper-slide 
+          figure.swiper-container
+            img(src="images/LinkedIn-Post-01.png").swiper-img
+            figcaption.swiper-content
+              strong ¡Hola!
+        article.swiper-slide 
+          figure.swiper-container
+            img(src="images/LinkedIn-Post-02.png").swiper-img
+            figcaption.swiper-content
+              strong Regístrate
+        article.swiper-slide 
+          figure.swiper-container
+            img(src="images/LinkedIn-Post-03.png").swiper-img
+            figcaption.swiper-content
+              strong Angular
+        article.swiper-slide 
+          figure.swiper-container
+            img(src="images/LinkedIn-Post-04.png").swiper-img
+            figcaption.swiper-content
+              strong Express
+        article.swiper-slide 
+          figure.swiper-container
+            img(src="images/LinkedIn-Post-05.png").swiper-img
+            figcaption.swiper-content
+              strong Serverless
+        article.swiper-slide 
+          figure.swiper-container
+            img(src="images/LinkedIn-Post-06.png").swiper-img
+            figcaption.swiper-content
+              strong Salesforce
+      .swiper-button-prev.swiper-button--linkedin
+      .swiper-button-next.swiper-button--linkedin
+
