@@ -30,14 +30,14 @@ const resources = {
     style:'',
     scripts:'',
     firebase:'https://www.gstatic.com/firebasejs',
-    domain:'https://fcs.enlabe.dev'
+    domain:'https://feed-shared-carousel.web.app'
   },
   prod:{
     media:'',
     style:'',
     scripts:'',
-    firebase:'https://fcs.enlabe.dev/__/firebase/',
-    domain:'https://fcs.enlabe.dev'
+    firebase:'https://feed-shared-carousel.web.app/__/firebase/',
+    domain:'https://feed-shared-carousel.web.app'
   }
 }
 
