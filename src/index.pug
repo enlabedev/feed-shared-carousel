@@ -2,3 +2,24 @@ extends pug/template/default.pug
 block title 
   title ENLABE | Enrique Lazo Bello - Full Stack &amp; Creative Developer
 block body
+  // Slider main container
+  .swiper
+    // Additional required wrapper
+    .swiper-wrapper
+      // Slides
+      .swiper-slide 
+        figure
+          img(src="https://picsum.photos/400/400")
+      .swiper-slide 
+        figure
+          img(src="https://picsum.photos/400/400")
+      .swiper-slide 
+        figure
+          img(src="https://picsum.photos/400/400")
+    // If we need pagination
+    .swiper-pagination
+    // If we need navigation buttons
+    .swiper-button-prev
+    .swiper-button-next
+    // If we need scrollbar
+    .swiper-scrollbar

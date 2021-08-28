@@ -36,6 +36,7 @@ html(lang='en', prefix='og: http://ogp.me/ns#')
     link(rel='preconnect' href='https://fonts.googleapis.com')
     link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='') 
     |<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&amp;display=swap">
+    |<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     link(rel='canonical' href=`${domainPath}`)
     link(rel='stylesheet' href='css/main.css')
     meta(name='description' content='ENLABE | Enrique Lazo Bello - Full Stack & Creative Developer')
@@ -68,4 +69,5 @@ html(lang='en', prefix='og: http://ogp.me/ns#')
     include ../partials/header.pug
     block body
     include ../partials/footer.pug
+    script(defer src='https://unpkg.com/swiper@7/swiper-bundle.min.js')
     script(defer src='js/main.js')
