@@ -1,0 +1,73 @@
+doctype html
+html(lang='en', prefix='og: http://ogp.me/ns#')
+  head
+    meta(charset='UTF-8')
+    script(type='application/ld+json').
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "#{domainPath}/#website",
+            "url": "#{domainPath}",
+            "name": "ENLABE | Enrique Lazo Bello - Full Stack &amp; Creative",
+            "description": "Feed Shared Carousel",
+            "publisher": { "@id": "#{domainPath}/#organization" },
+            "inLanguage": "en-US"
+          },
+          {
+          "@type": "WebPage",
+          "@id": "#{domainPath}/#webpage",
+          "url": "#{domainPath}",
+          "name": "ENLABE | Enrique Lazo Bello - Full Stack &amp; Creative",
+          "isPartOf": { "@id": "#{domainPath}/#website" },
+          "about": { "@id": "#{domainPath}/#organization" },
+          "datePublished": "2021-08-21T00:00:00-05:00",
+          "dateModified": "2021-08-00:00:00-05:00",
+          "description": "Feed Shared Carousel",
+          "inLanguage": "en-US",
+          "potentialAction": [{ "@type": "ReadAction", "target": ["#{domainPath}"] }]
+          }
+        ]
+      }
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    block title
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='') 
+    |<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&amp;display=swap">
+    |<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    link(rel='canonical' href=`${domainPath}`)
+    link(rel='stylesheet' href='css/main.css')
+    meta(name='description' content='ENLABE | Enrique Lazo Bello - Full Stack & Creative Developer')
+    meta(name='twitter:card' content='summary')
+    meta(name='twitter:site' content='@enlabe_dev')
+    meta(name='twitter:creator' content='@enlabe_dev')
+    meta(property='og:url' content=`${domainPath}`)
+    meta(property='og:title' content='ENLABE | Enrique Lazo Bello - Full Stack & Creative Developer')
+    meta(property='og:description' content="Feed Shared Carousel")
+    meta(property='og:image' content=`${domainPath}/images/enlabe-social-share.jpg`)
+    script(defer src=`${firebasePath}/8.10.0/firebase-app.js`)
+    script(defer src=`${firebasePath}/8.10.0/firebase-analytics.js`)
+    script(defer src=`${domainPath}/__/firebase/init.js`)
+    link(rel='apple-touch-icon' sizes='180x180' href='images/favicon/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='images/favicon/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='images/favicon/favicon-16x16.png')
+    link(rel='manifest' href='images/favicon/site.webmanifest')
+    link(rel='mask-icon' href='images/favicon/safari-pinned-tab.svg' color='#5bbad5')
+    link(rel='shortcut icon' href='images/favicon/favicon.ico')
+    meta(name='apple-mobile-web-app-title' content='ENLABE | Enrique Lazo Bello - Full Stack & Creative Developer')
+    meta(name='application-name' content='ENLABE | Enrique Lazo Bello - Full Stack & Creative Developer')
+    meta(name='msapplication-TileColor' content='#006AC6')
+    meta(name='msapplication-TileImage' content='images/favicon/mstile-144x144.png')
+    meta(name='msapplication-config' content='images/favicon/browserconfig.xml')
+    meta(name='theme-color' content='#006AC6')
+    noscript
+      link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&display=swap')
+
+  body.body
+    include ../partials/header.pug
+    block body
+    include ../partials/footer.pug
+    script(defer src='https://unpkg.com/swiper@7/swiper-bundle.min.js')
+    script(defer src='js/main.js')

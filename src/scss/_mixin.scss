@@ -1,0 +1,17 @@
+@use 'sass:math';
+
+/* Font Size
+-------------------------*/
+
+@mixin font-size($size: 12, $base: 16) {
+  font-size: $size + px;
+  font-size: math.div($size, $base) * 1rem;
+}
+
+/* Border Radius
+-------------------------*/
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  background-clip: padding-box; 
+}

@@ -1,0 +1,14 @@
+@use 'sass:math';
+@import "variable";
+@import "mixin";
+@import "components/swiper.scss";
+
+.body{
+  margin:0;
+  padding: 50px;
+  background: $white;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji,
+  Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+  color:rgba(0,0,0,0.9);
+  @include font-size(14)
+}
