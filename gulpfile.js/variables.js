@@ -10,7 +10,7 @@ const resources = {
     public: path.public + '/'
   },
   sass:{
-    source: path.source + '/scss/*.scss',
+    source: path.source + '/scss/**/*.scss',
     public: path.public + '/css/',
     main:'main.css'
   },
