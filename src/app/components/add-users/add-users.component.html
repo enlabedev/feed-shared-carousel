@@ -1,1 +1,52 @@
-<p>add-users works!</p>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center">
+        <section>
+          <h3 class="h3">Full Stack & Creative Developer</h3>
+        <h1 class="h1">Enrique Lazo Bello</h1>
+        <p>
+          Regístrate y aprende a conectar mejor con tus clientes usando nuevas tecnologías:
+        </p>
+        <ul>
+          <li>Angular</li>
+          <li>Express</li>
+          <li>Firebase</li>
+          <li>SalesForce</li>
+        </ul>
+        <div class="row">
+          <div class="col-sm-4 text-sm-end text-center">
+            <a href="#" class="btn btn-primary btn-lg bg-primary">Visítame</a>
+          </div>
+          <div class="col-sm-8 text-sm-start text-center mb-4 mb-md-0">
+            Mántente actualizado <br>
+              Sígueme en mis redes
+          </div>
+        </div>
+        </section>
+      </div>
+      <div class="col-md-6">
+        <div class="form rounded bg-light p-4 p-md-5 text-center text-dark ">
+          <div class="rounded-circle bg-primary p-4 d-inline-block mb-3">
+            <img src="assets/images/bullhorn-solid.svg" width="32" alt="">
+          </div>
+          <h2 class="h2">Regístrate y aprende</h2>
+          <p class="text-gray">Todo lo que necesita para conectar con tus clientes. ¡Solicita más información!</p>
+          <form action="">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="name"><img src="assets/images/user-solid.svg" width="24" alt=""></span>
+              <input type="text" class="form-control" placeholder="Nombres" aria-label="name" aria-describedby="name" required [(ngModel)]="user.name">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="email"><img src="assets/images/envelope-solid.svg" width="24" alt=""></span>
+              <input type="text" class="form-control" placeholder="Correo Electrónico" aria-label="email" aria-describedby="email" required [(ngModel)]="user.email">
+            </div>
+            <div class="d-grid gap-2">
+              <button (click)="saveUser()" class="btn btn-primar bg-primary text-light" type="button">Registrarse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
