@@ -5,6 +5,7 @@ dist/
 tmp/
 app/**/*.js
 app/**/*.js.map
+environments/
 
 # dependencies
 node_modules/
@@ -371,3 +372,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+src/environments/environment.ts
