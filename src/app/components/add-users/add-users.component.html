@@ -1,0 +1,63 @@
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center">
+        <section>
+          <h3 class="h3">Full Stack & Creative Developer</h3>
+        <h1 class="h1">Enrique Lazo Bello</h1>
+        <p>
+          Regístrate y aprende a conectar mejor con tus clientes usando nuevas tecnologías:
+        </p>
+        <ul>
+          <li>Angular</li>
+          <li>Express</li>
+          <li>Firebase</li>
+          <li>SalesForce</li>
+        </ul>
+        <div class="row">
+          <div class="col-sm-4 text-sm-end text-center">
+            <a href="#" class="btn btn-primary btn-lg bg-primary">Visítame</a>
+          </div>
+          <div class="col-sm-8 text-sm-start text-center mb-4 mb-md-0">
+            Mántente actualizado <br>
+              Sígueme en mis redes
+          </div>
+        </div>
+        </section>
+      </div>
+      <div class="col-md-6">
+        <div class="form rounded bg-light p-4 p-md-5 text-center text-dark ">
+          <div class="rounded-circle bg-primary p-4 d-inline-block mb-3">
+            <img src="assets/images/bullhorn-solid.svg" width="32" alt="">
+          </div>
+          <h2 class="h2">Regístrate y aprende</h2>
+          <p class="text-gray">Todo lo que necesita para conectar con tus clientes. ¡Solicita más información!</p>
+          <form action="">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="firstName"><img src="assets/images/user-regular.svg" height="24" alt=""></span>
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="firstName" aria-describedby="firstName" required [(ngModel)]="user.FirstName" name="FirstName">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="lastName"><img src="assets/images/user-solid.svg" height="24" alt=""></span>
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="lastName" aria-describedby="lastName" required [(ngModel)]="user.LastName" name="LastName">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="email"><img src="assets/images/envelope-solid.svg" height="24" alt=""></span>
+              <input type="text" class="form-control" placeholder="Correo Electrónico" aria-label="email" aria-describedby="email" required [(ngModel)]="user.Email" name="Email">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="phone"><img src="assets/images/mobile-android-alt-solid.svg" height="24" alt=""></span>
+              <input type="text" class="form-control" placeholder="Celular" aria-label="phone" aria-describedby="phone" required [(ngModel)]="user.Phone" name="Phone">
+            </div>
+            <div class="d-grid gap-2">
+              <button (click)="saveUser()" class="btn bg-primary text-light" type="button">Registrarse</button>
+            </div>
+          </form>
+          <p class="text-primary" *ngIf="submitted">
+            Gracias por tu interés. Hemos enviado una copia a tu correo electrónico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+@import "assets/scss/variables";
+@import "assets/scss/mixin";
+
+:root{
+  --bs-blue:#{$blue};
+  --bs-primary:#{$blue};
+  --bs-gray-dark: #{$gray-dark};
+  --bs-gray:#{$gray-light};
+  --bs-light:#{$light};
+  --bs-primary-rgb:#{$blue-rgb};
+}
+
+body{
+  background: url('assets/images/bg.jpg') center no-repeat;
+  color: $white;
+  background-size: cover;
+  filter: blur(0);
+}
+
+.content{
+  padding: 50px 0px;
+  
+  @media (min-width:$breakpoint-tablet) {
+    width: 100vw;
+    height: 100vh;
+  }
+  background: rgba(17,17,17,0.85);
+  display:flex;
+  align-items: center;
+}
+
+
