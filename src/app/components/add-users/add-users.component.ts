@@ -9,8 +9,10 @@ import { FscService } from 'src/app/services/fsc.service';
 export class AddUsersComponent implements OnInit {
 
   user: Fsc = {
-    name:'',
-    email:''
+    FirstName:'',
+    LastName:'',
+    Phone:'',
+    Email:''
   }
   submitted = false;
 
@@ -21,8 +23,10 @@ export class AddUsersComponent implements OnInit {
 
   saveUser(): void{
     const data = {
-      name: this.user.name,
-      email: this.user.email
+      FirstName: this.user.FirstName,
+      LastName: this.user.LastName,
+      Phone: this.user.Phone,
+      Email: this.user.Email
     }
 
     this.FscService.create(data).subscribe(response => {

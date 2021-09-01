@@ -34,17 +34,28 @@
           <p class="text-gray">Todo lo que necesita para conectar con tus clientes. ¡Solicita más información!</p>
           <form action="">
             <div class="input-group mb-3">
-              <span class="input-group-text" id="name"><img src="assets/images/user-solid.svg" width="24" alt=""></span>
-              <input type="text" class="form-control" placeholder="Nombres" aria-label="name" aria-describedby="name" required [(ngModel)]="user.name">
+              <span class="input-group-text" id="firstName"><img src="assets/images/user-regular.svg" height="24" alt=""></span>
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="firstName" aria-describedby="firstName" required [(ngModel)]="user.FirstName" name="FirstName">
             </div>
             <div class="input-group mb-3">
-              <span class="input-group-text" id="email"><img src="assets/images/envelope-solid.svg" width="24" alt=""></span>
-              <input type="text" class="form-control" placeholder="Correo Electrónico" aria-label="email" aria-describedby="email" required [(ngModel)]="user.email">
+              <span class="input-group-text" id="lastName"><img src="assets/images/user-solid.svg" height="24" alt=""></span>
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="lastName" aria-describedby="lastName" required [(ngModel)]="user.LastName" name="LastName">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="email"><img src="assets/images/envelope-solid.svg" height="24" alt=""></span>
+              <input type="text" class="form-control" placeholder="Correo Electrónico" aria-label="email" aria-describedby="email" required [(ngModel)]="user.Email" name="Email">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="phone"><img src="assets/images/mobile-android-alt-solid.svg" height="24" alt=""></span>
+              <input type="text" class="form-control" placeholder="Celular" aria-label="phone" aria-describedby="phone" required [(ngModel)]="user.Phone" name="Phone">
             </div>
             <div class="d-grid gap-2">
-              <button (click)="saveUser()" class="btn btn-primar bg-primary text-light" type="button">Registrarse</button>
+              <button (click)="saveUser()" class="btn bg-primary text-light" type="button">Registrarse</button>
             </div>
           </form>
+          <p class="text-primary" *ngIf="submitted">
+            Gracias por tu interés. Hemos enviado una copia a tu correo electrónico.
+          </p>
         </div>
       </div>
     </div>

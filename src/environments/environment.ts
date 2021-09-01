@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  URL: '',
+  URL: 'https://us-central1-enlabe-dev.cloudfunctions.net/app',
 };
 
 /*
